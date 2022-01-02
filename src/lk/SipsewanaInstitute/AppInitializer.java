@@ -1,7 +1,13 @@
 package lk.SipsewanaInstitute;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
 
 /**
  * @author : A.D.Liyanage
@@ -15,7 +21,15 @@ public class AppInitializer extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-
+    public void start(Stage primaryStage) throws IOException {
+        URL resource = getClass().getResource("view/LoginForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        Scene scene = new Scene(load);
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.centerOnScreen();
+//        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.setTitle("SIPSEWANA INSTITUTE | login Form");
+        primaryStage.show();
     }
 }

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="745.0" prefWidth="1076.0" styleClass="dPane" stylesheets="@assets/style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.SipsewanaInstitute.controller.CourseDetailsFormController">
+   <children>
+      <Pane layoutX="59.0" layoutY="107.0" prefHeight="299.0" prefWidth="966.0" style="-fx-background-radius: 50; -fx-border-radius: 25; -fx-border-color: white;" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0">
+         <children>
+            <JFXTextField fx:id="txtDuration" focusColor="WHITE" labelFloat="true" layoutX="153.0" layoutY="147.0" prefHeight="43.0" prefWidth="253.0" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="23.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="lblCID" layoutX="173.0" layoutY="13.0" prefHeight="45.0" prefWidth="188.0" text="C-001" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Label>
+            <HBox layoutX="110.0" layoutY="108.0" prefHeight="48.0" prefWidth="453.0" spacing="50.0">
+               <children>
+                  <JFXRadioButton fx:id="rbtnPartTime" lineSpacing="10.0" text="Part Time" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="27.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="groupC" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="rbtnFullTime" lineSpacing="10.0" text="Full Time" textFill="WHITE" toggleGroup="$groupC">
+                     <font>
+                        <Font name="Impact" size="27.0" />
+                     </font>
+                  </JFXRadioButton>
+               </children>
+            </HBox>
+            <Label layoutX="26.0" layoutY="105.0" text="Type  :" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtFee" focusColor="WHITE" labelFloat="true" layoutX="151.0" layoutY="194.0" prefHeight="43.0" prefWidth="253.0" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCourseName" focusColor="WHITE" labelFloat="true" layoutX="207.0" layoutY="48.0" prefHeight="45.0" prefWidth="661.0" styleClass="text" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnNewCourse" layoutX="882.0" layoutY="62.0" onAction="#btnNewCourseOnAction" prefHeight="36.0" prefWidth="49.0" style="-fx-background-radius: 100; -fx-background-radius: 100;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/images/plus_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbDurationType" editable="true" focusColor="WHITE" layoutX="432.0" layoutY="151.0" onAction="#cmbDurationTypeOnAction" prefHeight="38.0" prefWidth="188.0" promptText="Duration Type" style="-jfx-unfocus-color: white;" styleClass="text" unFocusColor="WHITE" visibleRowCount="4" />
+            <Text fill="WHITE" layoutX="26.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID  : " wrappingWidth="151.4921875">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="26.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name  : " wrappingWidth="244.4921875">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="26.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee (Rs.)  : " wrappingWidth="244.4921875">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="26.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration  : " wrappingWidth="244.4921875">
+               <font>
+                  <Font name="Impact" size="27.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="633.0" layoutY="248.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: #487eb0; -fx-border-radius: 50; -fx-background-radius: 50;" text="Update" textFill="WHITE">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5227272727272727" centerY="0.5097087378640777" radius="0.9268292682926829">
+                     <stops>
+                        <Stop color="#d120dd" />
+                        <Stop color="WHITE" offset="0.33766695083830633" />
+                        <Stop color="#02bef0" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="792.0" layoutY="247.0" onAction="#btnSaveCOnAction" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: #f7d794; -fx-border-radius: 50; -fx-background-radius: 50;" text="Save">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5227272727272727" centerY="0.5097087378640777" radius="0.9268292682926829">
+                     <stops>
+                        <Stop color="#d120dd" />
+                        <Stop color="WHITE" offset="0.33766695083830633" />
+                        <Stop color="#02bef0" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="403.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Details" underline="true">
+         <font>
+            <Font name="Impact" size="45.0" />
+         </font>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.30097087378640774">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Text>
+      <TableView fx:id="tblCourse" layoutX="55.0" layoutY="430.0" prefHeight="290.0" prefWidth="966.0" stylesheets="@assets/style/tableStyle.css" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="55.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="125.0" text="Code" />
+          <TableColumn fx:id="colCName" prefWidth="189.0" text="Name" />
+            <TableColumn fx:id="colType" prefWidth="155.0" text="Type" />
+            <TableColumn fx:id="colDuration" prefWidth="168.0" text="Duration" />
+            <TableColumn fx:id="colFee" prefWidth="199.0" text="Fee(Rs.)" />
+            <TableColumn fx:id="colDelete" prefWidth="126.0" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
