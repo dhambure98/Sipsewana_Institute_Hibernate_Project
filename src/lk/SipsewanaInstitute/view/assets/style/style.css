@@ -4,7 +4,7 @@
 **/
 
 .login_main {
-    -fx-background-color: linear-gradient(to right, #061b32, #000203);
+    -fx-background-color: linear-gradient(to right,  #0080ff, #99ccff);
 }
 
 .jfxTextFieldFontColour {
