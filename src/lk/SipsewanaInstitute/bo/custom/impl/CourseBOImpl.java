@@ -10,12 +10,8 @@ import lk.SipsewanaInstitute.entity.Course;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author : A.D.Liyanage
- * @since : 0.1.0
- **/
-
 public class CourseBOImpl implements CourseBO {
+
     CourseDAO courseDAO= DAOFactory.getInstance().getDAO(DAOFactory.DAOType.COURSE);
 
 
@@ -80,3 +76,4 @@ public class CourseBOImpl implements CourseBO {
         }return null;
     }
 }
+

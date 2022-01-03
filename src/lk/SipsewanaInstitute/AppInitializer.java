@@ -28,7 +28,6 @@ public class AppInitializer extends Application {
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.centerOnScreen();
-//        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setTitle("SIPSEWANA INSTITUTE | login Form");
         primaryStage.show();
     }

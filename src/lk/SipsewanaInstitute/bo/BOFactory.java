@@ -4,11 +4,6 @@ import lk.SipsewanaInstitute.bo.custom.impl.CourseBOImpl;
 import lk.SipsewanaInstitute.bo.custom.impl.RegisterBOImpl;
 import lk.SipsewanaInstitute.bo.custom.impl.StudentBOImpl;
 
-/**
- * @author : A.D.Liyanage
- * @since : 0.1.0
- **/
-
 public class BOFactory {
     private static BOFactory boFactory;
 
@@ -37,4 +32,3 @@ public class BOFactory {
     }
 
 }
-

@@ -2,10 +2,6 @@ package lk.SipsewanaInstitute.view.TM;
 
 import com.jfoenix.controls.JFXButton;
 
-/**
- * @author : Kavishka Prabath
- * @since : 0.1.0
- **/
 
 public class CourseTM {
     private String code;

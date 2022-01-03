@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RegisterBOImpl implements RegisterBO {
+
     RegisterDAO registerDAO = DAOFactory.getInstance().getDAO(DAOFactory.DAOType.REGISTER);
     CourseDAO courseDAO = DAOFactory.getInstance().getDAO(DAOFactory.DAOType.COURSE);
     StudentDAO studentDAO = DAOFactory.getInstance().getDAO(DAOFactory.DAOType.STUDENT);

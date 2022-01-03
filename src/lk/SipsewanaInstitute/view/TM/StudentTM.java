@@ -4,11 +4,6 @@ import com.jfoenix.controls.JFXButton;
 
 import java.sql.Date;
 
-/**
- * @author : Kavishka Prabath
- * @since : 0.1.0
- **/
-
 public class StudentTM {
     private String ID;
     private String name;

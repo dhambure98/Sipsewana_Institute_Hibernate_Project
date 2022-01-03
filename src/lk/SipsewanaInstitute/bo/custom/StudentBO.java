@@ -1,13 +1,9 @@
 package lk.SipsewanaInstitute.bo.custom;
 
 import lk.SipsewanaInstitute.bo.SuperBO;
+import lk.SipsewanaInstitute.dto.StudentDTO;
 
 import java.util.ArrayList;
-
-/**
- * @author : A.D.Liyanage
- * @since : 0.1.0
- **/
 
 public interface StudentBO extends SuperBO {
     boolean saveStudent(StudentDTO dto) throws Exception;

@@ -31,6 +31,10 @@ public class DashboardFormController {
 
 
     public void initialize() throws IOException {
+        URL resource = getClass().getResource("../view/DashboardMainForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        DashboardContext.getChildren().clear();
+        DashboardContext.getChildren().add(load);
     }
 
     public void goToDashboardOnAction(ActionEvent actionEvent) throws IOException {
@@ -76,7 +80,6 @@ public class DashboardFormController {
         Scene scene = new Scene(load);
         Stage stage = new Stage();
         stage.setResizable(false);
-        stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("SIPSEWANA INSTITUTE | login Form");
         stage.centerOnScreen();
         stage.setScene(scene);

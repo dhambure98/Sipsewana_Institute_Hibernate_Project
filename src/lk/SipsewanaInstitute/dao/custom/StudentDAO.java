@@ -1,4 +1,8 @@
 package lk.SipsewanaInstitute.dao.custom;
 
-public interface StudentDAO {
+import lk.SipsewanaInstitute.dao.CrudDAO;
+import lk.SipsewanaInstitute.entity.Student;
+
+public interface StudentDAO extends CrudDAO<Student, String> {
+    String getLastStudentID() throws Exception;
 }

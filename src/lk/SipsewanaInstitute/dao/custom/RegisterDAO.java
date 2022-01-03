@@ -1,4 +1,8 @@
 package lk.SipsewanaInstitute.dao.custom;
 
-public interface RegisterDAO {
+import lk.SipsewanaInstitute.dao.CrudDAO;
+import lk.SipsewanaInstitute.entity.Registration;
+
+public interface RegisterDAO  extends CrudDAO<Registration, String> {
+    int getLastRegNo() throws Exception;
 }
