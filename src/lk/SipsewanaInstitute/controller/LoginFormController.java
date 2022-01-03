@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
@@ -35,28 +36,17 @@ public class LoginFormController {
     public JFXButton btnInvisible;
     public JFXButton btnLogin;
     public ImageView imgLogo;
+    public Pane loginPane;
 
     public void initialize() {
-        fadeTransition();
-        rotateAnimation();
         txtPasswordClone.setVisible(false);
         btnInvisible.setVisible(false);
     }
 
     public void btnViewPWOnAction(ActionEvent actionEvent) {
-        txtPassword.setVisible(false);
-        txtPasswordClone.setVisible(true);
-        btnInvisible.setVisible(true);
-        btnViewPW.setVisible(false);
-        txtPasswordClone.setText(txtPassword.getText());
     }
 
     public void btnInvisibleOnAction(ActionEvent actionEvent) {
-        txtPassword.setVisible(true);
-        txtPasswordClone.setVisible(false);
-        btnInvisible.setVisible(false);
-        btnViewPW.setVisible(true);
-        txtPassword.setText(txtPasswordClone.getText());
     }
 
     public void btnLoginOnAction(ActionEvent actionEvent) {
@@ -96,24 +86,5 @@ public class LoginFormController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    void fadeTransition() {
-
-        FadeTransition fadeIn = new FadeTransition(Duration.millis(2000), root);
-        fadeIn.setFromValue(0.0);
-        fadeIn.setToValue(1.0);
-        fadeIn.play();
-    }
-
-    void rotateAnimation() {
-        RotateTransition transition = new RotateTransition();
-        transition.setAxis(Rotate.Y_AXIS);
-        transition.setByAngle(360);
-        transition.setCycleCount(500);
-        transition.setDuration(Duration.seconds(15));
-        transition.setAutoReverse(true);
-        transition.setNode(imgLogo);
-        transition.play();
     }
 }

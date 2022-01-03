@@ -1,11 +1,23 @@
 /**
-  * @ author : Kavishka Prabath
+  * @ author : A.D.Liyanage
   * @ since : 0.1.0
 **/
 
+/*-----------Login Page--------------*/
 .login_main {
-    -fx-background-color: linear-gradient(to right,  #0080ff, #99ccff);
+    -fx-background-color: linear-gradient(to right,  #9df1f2, #72cce5);
 }
+
+.loginPane{
+    -fx-background-color: linear-gradient(to right,  #9da4f2, #83b2db);
+    -fx-background-radius: 25px;
+}
+
+/*------Student Details Form--------*/
+.dPane {
+    -fx-background-color: linear-gradient(to right,  #6f76c6, #66a0d2);;
+}
+
 
 .jfxTextFieldFontColour {
     -fx-text-fill: whitesmoke;
@@ -88,4 +100,7 @@
     /*-fx-background-color:  #89aec9;*/
     -fx-text-fill: black;
     -fx-background-color:  #8484F7;
+}
+
+.button-exit {
 }
