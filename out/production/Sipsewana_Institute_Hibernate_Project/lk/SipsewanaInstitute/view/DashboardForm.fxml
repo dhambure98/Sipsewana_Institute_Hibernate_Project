@@ -2,7 +2,6 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -31,7 +30,7 @@
                   </LinearGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnRegister" ellipsisString="" layoutY="335.0" onAction="#goToRegisterOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="REGISTRATION" textFill="WHITE">
+            <JFXButton fx:id="btnRegister" ellipsisString="" layoutY="310.0" onAction="#goToRegisterOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="REGISTRATION" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -47,7 +46,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnCourse" ellipsisString="" layoutY="395.0" onAction="#goToCourseOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="COURSES" textFill="WHITE">
+            <JFXButton fx:id="btnCourse" ellipsisString="" layoutY="370.0" onAction="#goToCourseOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="COURSES" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -63,7 +62,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnStudent" ellipsisString="" layoutY="455.0" onAction="#goToStudentDetailOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="STUDENTS" textFill="WHITE">
+            <JFXButton fx:id="btnStudent" ellipsisString="" layoutY="430.0" onAction="#goToStudentDetailOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="STUDENTS" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -79,7 +78,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton fx:id="btnHelp" ellipsisString="" layoutY="515.0" onAction="#goToHelpOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="HELP" textFill="WHITE">
+            <JFXButton fx:id="btnHelp" ellipsisString="" layoutY="490.0" onAction="#goToHelpOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="HELP" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -111,22 +110,12 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <ImageView fx:id="imgLogo" fitHeight="190.0" fitWidth="172.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgLogo" fitHeight="236.0" fitWidth="188.0" layoutX="25.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/images/image03.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="180.0" prefHeight="62.0" prefWidth="225.0" text="SIPSEWANA" textFill="#fefefe">
-               <font>
-                  <Font name="Impact" size="35.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="225.0" prefHeight="17.0" prefWidth="225.0" text="Institute of Higher Education" textFill="#8d8984">
-               <font>
-                  <Font name="Impact" size="13.0" />
-               </font>
-            </Label>
-            <JFXButton fx:id="btnDashboard" ellipsisString="" layoutY="275.0" onAction="#goToDashboardOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="DASHBOARD" textFill="WHITE">
+            <JFXButton fx:id="btnDashboard" ellipsisString="" layoutY="250.0" onAction="#goToDashboardOnAction" prefHeight="50.0" prefWidth="225.0" styleClass="btn-nav" stylesheets="@assets/style/style.css" text="DASHBOARD" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>

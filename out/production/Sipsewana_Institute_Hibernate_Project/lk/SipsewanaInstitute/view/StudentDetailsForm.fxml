@@ -158,7 +158,7 @@
       </Label>
       <JFXRadioButton fx:id="rbtnMale1" layoutX="223.0" layoutY="308.0" lineSpacing="10.0" style="-jfx-selected-color: white; -jfx-unselected-color: white;" text="Male" textFill="WHITE">
          <font>
-            <Font name="Impact" size="20.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font>
          <padding>
             <Insets top="10.0" />
@@ -169,7 +169,7 @@
       </JFXRadioButton>
       <JFXRadioButton fx:id="rbtnFemale1" layoutX="323.0" layoutY="309.0" lineSpacing="10.0" style="-jfx-selected-color: white; -jfx-unselected-color: white;" text="Female" textFill="WHITE" toggleGroup="$groupGender1">
          <font>
-            <Font name="Impact" size="19.0" />
+            <Font name="Arial" size="20.0" />
          </font>
       </JFXRadioButton>
    </children>

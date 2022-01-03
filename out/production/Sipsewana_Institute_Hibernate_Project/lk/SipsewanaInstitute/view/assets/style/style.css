@@ -1,10 +1,10 @@
 /*-----------Login Page--------------*/
 .login_main {
-    -fx-background-color: linear-gradient(to right,  #9df1f2, #72cce5);
+    -fx-background-color: linear-gradient(to right,  #bdcfe0, #a3bbd2);
 }
 
 .loginPane{
-    -fx-background-color: linear-gradient(to right,  #9da4f2, #83b2db);
+    -fx-background-color: linear-gradient(to right,  #7579a8, #83b2db);
     -fx-background-radius: 25px;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .dashboardPane {
-    -fx-background-color: linear-gradient(to right, #061b32, #05182C);
+    -fx-background-color: linear-gradient(to right, #14182a, #13182e);
 }
 
 .btn-nav:hover{

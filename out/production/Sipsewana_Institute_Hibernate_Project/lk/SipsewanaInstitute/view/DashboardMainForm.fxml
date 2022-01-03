@@ -32,9 +32,9 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="625.0" layoutY="159.0" prefHeight="145.0" prefWidth="273.0" style="-fx-background-radius: 3; -fx-background-color: linear-gradient(to right top, #611ecb, #622ad4, #6435dd, #653fe5, #6648ee, #7851f2, #875af6, #9663fa, #b170fa, #c87ffb, #dc8ffd, #eda0ff);">
+      <Pane layoutX="625.0" layoutY="159.0" prefHeight="145.0" prefWidth="273.0" style="-fx-background-radius: 25; -fx-background-color: linear-gradient(to right top, #611ecb, #622ad4, #6435dd, #653fe5, #6648ee, #7851f2, #875af6, #9663fa, #b170fa, #c87ffb, #dc8ffd, #eda0ff);">
          <children>
-            <ImageView fitHeight="72.0" fitWidth="71.0" layoutX="26.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="72.0" fitWidth="71.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@assets/images/course.png" />
                </image>
@@ -44,7 +44,7 @@
                   <Font name="Comic Sans MS Bold" size="20.0" />
                </font>
             </Text>
-            <Label fx:id="lblNoOfCourse" alignment="CENTER" layoutX="97.0" layoutY="28.0" prefHeight="78.0" prefWidth="164.0" text="00" textFill="WHITE">
+            <Label fx:id="lblNoOfCourse" alignment="CENTER" layoutX="97.0" layoutY="22.0" prefHeight="78.0" prefWidth="164.0" text="00" textFill="WHITE">
                <font>
                   <Font name="Comic Sans MS Bold" size="60.0" />
                </font>

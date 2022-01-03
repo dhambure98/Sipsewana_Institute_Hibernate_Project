@@ -29,7 +29,7 @@
                   <Font name="Times New Roman" size="22.0" />
                </font>
             </JFXTextField>
-            <Label fx:id="lblCID" layoutX="173.0" layoutY="13.0" prefHeight="45.0" prefWidth="188.0" text="C-001" textFill="WHITE">
+            <Label fx:id="lblCID" layoutX="173.0" layoutY="13.0" prefHeight="45.0" prefWidth="188.0" text="C-001">
                <font>
                   <Font name="Arial Bold" size="22.0" />
                </font>
@@ -110,7 +110,7 @@
                   </RadialGradient>
                </ripplerFill>
                <font>
-                  <Font name="Times New Roman Bold" size="18.0" />
+                  <Font name="Arial Bold" size="18.0" />
                </font>
             </JFXButton>
             <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="628.0" layoutY="239.0" onAction="#btnSaveCOnAction" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: #f7d794; -fx-border-radius: 50; -fx-background-radius: 25;" text="Save">
@@ -124,7 +124,7 @@
                   </RadialGradient>
                </ripplerFill>
                <font>
-                  <Font name="Times New Roman Bold" size="18.0" />
+                  <Font name="Arial Bold" size="18.0" />
                </font>
             </JFXButton>
          </children>
